@@ -19,7 +19,7 @@
 		- DAYS_OPI_BZD: Total cumulative overlapping days of concurrent use of opioids, benzodiazepines
 		- N_OPI_PRESCRIBERS: Number of opioid prescribers
 		- N30DRX_OPIOID Total number of 30-day prescription for any opioids
-		- TYPE_OPIOIDS: Drug Enforcement Administration’s Controlled Substance Schedule (Schedule I to IV) and duration of action (long- vs. short-acting)
+		- TYPE_OPIOIDS: Drug Enforcement Administrationâ€™s Controlled Substance Schedule (Schedule I to IV) and duration of action (long- vs. short-acting)
 
 	- Provider-level
 		- MME_PER_PT_PERIOD_AVRG: Average monthly opioid prescribing dose (MME)
@@ -875,31 +875,31 @@
 		Tramadol
 		Narcotic
 
-	(1) create “individual opioid medication flags” as follows:
-	0=No test, 1=Yes (with normal results), 2=Yes (with abnormal results), 3=yes (with invalid/missing results or other results) "
+	(1) create â€œindividual opioid medication flagsâ€ as follows:
+	0=No test, 1=Yes (with normal results), 2=Yes (with abnormal results), 3=yes (with invalid/missing results or other results)Â "
 
 	(2) 
 	Any_urine_XXX (e.g., any_urinetest_bupre) 
-	including any urine tests related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).  "
+	including anyÂ urine testsÂ related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).Â Â "
 	"Any_urine_confirm_XXX (e.g., any_urineconfirm_bupre): 
-	flag any urine “confirmatory” tests related to the specific drug. "
+	flagÂ any urine â€œconfirmatoryâ€ testsÂ related to the specific drug.Â "
 
 	"Any_blood_XXX (e.g., any_bloodtest_bupre) 
-	including any blood tests related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).  "
+	including anyÂ blood testsÂ related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).Â Â "
 	"Any_blood_confirm_XXX (e.g., any_bloodconfirm_bupre): 
-	flag any blood “confirmatory” tests related to the specific drug. "
+	flagÂ any blood â€œconfirmatoryâ€ testsÂ related to the specific drug.Â "
 
 	"Any_other_XXX (e.g., any_bloodtest_bupre) 
-	including any non-urine and non-blood tests related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).  "
+	including anyÂ non-urine and non-blood testsÂ related to the specific drug, regardless of methods (e.g., screen vs. confirmatory).Â Â "
 
 	(3)
-	We will create “an overall opioid medication flags” as follows:
+	We will create â€œan overall opioid medication flagsâ€ as follows:
 	"Any_urine_opiates 
-	including any urine tests related to any opiates or narcotics, regardless of methods (e.g., screen vs. confirmatory).  Any flag =1 for individual drug in the #1 bullet will be included too."
+	including anyÂ urine testsÂ related toÂ any opiates or narcotics, regardless of methods (e.g., screen vs. confirmatory).Â Â Any flag =1 for individual drug in the #1 bulletÂ will be included too."
 	"Any_urine_confirm_opiates: 
-	flag any urine “confirmatory” tests related to any opiates or narcotics. Any flag =1 for individual drug in the #1b, 1d bullets will be included too.  "
+	flagÂ any urine â€œconfirmatoryâ€ testsÂ related toÂ any opiates or narcotics.Â Any flag =1 for individual drug in the #1b, 1d bulletsÂ will be included too. Â "
 	"Any_other_opiates: 
-	flag including any non-urine and non-blood tests related to any opiates or narcotics, regardless of methods (e.g., screen vs. confirmatory).  Any flag =1 for individual drug in the #1e bullet will be included too. "
+	flag including anyÂ non-urine and non-blood testsÂ related toÂ any opiates or narcotics, regardless of methods (e.g., screen vs. confirmatory).Â Â Any flag =1 for individual drug in the #1e bulletÂ will be included too.Â "
 
 	%procfreq(temp.bene_lab,ABN_IND/missing);
 	ABN_IND Frequency 	Percent 
